@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const NavStyle = styled.div`
+display: flex;
 
 `
 
 const NavBar = () => {
     return (
-        <div>
+        <NavStyle>
+          <h1>Tunr</h1>
           <Link to="/">All Artist</Link>  
-        </div>
+        </NavStyle>
     );
 };
 

@@ -30,8 +30,6 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    <h1>Tunr</h1>
-
                     <NavBar/>
 
                     <Switch>

@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const SongList = styled.div`
-
+const Song = styled.div`
 `
 
 const ArtistList = (props) => {
@@ -12,9 +11,9 @@ const ArtistList = (props) => {
             <h2>All Artists</h2>
             {props.artists.map((artist,index) => {
                 return (
-                    <div>
+                    <Song className="songContainer">
                         <Link key={index} to={`/artists/${artist.id}`}>{artist.name}</Link>
-                    </div>
+                    </Song>
                 )
             })}
 
